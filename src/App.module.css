@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border : 5px solid rgb(39, 148, 199);
+  border-radius: 2rem;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width:760px){
+  .app{
+    margin : 5% 25%;
+    padding: 1rem;
+  }
+}
+@media(max-width:760px){
+  .app{
+    margin : 5% 5%;
+    padding: 2rem;
+  }
+}
