@@ -7,7 +7,7 @@ import style from './FlightForm.module.css';
 const FlightForm = () => {
     return <React.Fragment>
         <form className={style.flightForm}>
-            <h1 className={style.heading}>Flight Search App</h1>
+            <h1 className={style.heading}>Flight Search App Deployed</h1>
             <div className={`${style.fields} ${style.flex}`}>
                 <div className={style.formInput} ><InputBox id="departure_city" type="text" /></div>
                 <div className={style.formInput}><InputBox id="arrival_city" type="text" /></div>
