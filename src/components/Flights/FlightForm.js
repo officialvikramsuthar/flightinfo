@@ -17,7 +17,7 @@ const FlightForm = () => {
         setFlightErrorMessage("Loading...");
         let departureCity = departureCityInput;
         let arrivalCity = arrivalCityInput;
-        if(departureCity == "" ||  arrivalCity == ""){
+        if(departureCity === "" ||  arrivalCity === ""){
             setFieldInputError(true)
             setFlightErrorMessage();
             return ;
@@ -93,7 +93,7 @@ const FlightForm = () => {
             <h3>Best Flight Plan</h3>
              {flightDetails.map(flight=> <FlightDetails data={flight} key={flight.id}/> )}
         </div>}
-        { flightDetails.length == 0 &&  <p className={style.errorMessage}>{flightsErrorMessage}</p>}
+        { flightDetails.length === 0 &&  <p className={style.errorMessage}>{flightsErrorMessage}</p>}
         
     </React.Fragment>
 }
