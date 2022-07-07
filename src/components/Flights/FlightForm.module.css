@@ -36,3 +36,16 @@
     text-transform: uppercase;
     width: 100%;
 }
+.errorMessage{
+    color:red
+}
+
+@media (max-width:600px) {
+    .fields{
+        flex-direction: column;
+    }
+    .formInput{
+        padding:0px 0px;
+        width: 100%;
+    }
+}

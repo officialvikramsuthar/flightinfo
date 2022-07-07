@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import style from './FlightDetails.module.css';
 
-const FlightDetails = () => {
+const FlightDetails = ({data}) => {
     return <Fragment>
         <table className={style.table}>
             <thead>
@@ -13,9 +13,9 @@ const FlightDetails = () => {
             </thead>
             <tbody>
             <tr>
-                <td>AK-168</td>
-                <td>Delhi - 7:00 PM</td>
-                <td>Indore - 8:00 PM</td>
+                <td>{data.ticket}</td>
+                <td>{data.departureDetails}</td>
+                <td>{data.arrivalDetails}</td>
             </tr>
             </tbody>
         </table>
