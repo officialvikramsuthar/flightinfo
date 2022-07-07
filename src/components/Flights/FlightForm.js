@@ -78,7 +78,7 @@ const FlightForm = () => {
     }
     return <React.Fragment>
         <form className={style.flightForm} onSubmit={formSubmithandler}>
-            <h1 className={style.heading}>Flight Search App Deployed</h1>
+            <h1 className={style.heading}>Flight Search</h1>
             <div className={`${style.fields} ${style.flex}`}>
                 <div className={style.formInput} ><InputBox id="departure_city" type="text" onValueChange={departureInputHandler} placeholder="Departure City*" /></div>
                 <div className={style.formInput}><InputBox id="arrival_city" type="text" onValueChange={arrivalInputHandler} placeholder="Arrival City*"/></div>
